@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Portfolio | Nazli</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    display:flex;
+    background:#f6f1e7;
+    color:#4a3f35;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar{
+    width:260px;
+    min-height:100vh;
+    background: linear-gradient(180deg,#f3e8d7,#e6d3b8);
+    padding:30px 20px;
+    position:fixed;
+    border-right:3px solid #d6c3a3;
+}
+
+.profile{
+    text-align:center;
+}
+
+.profile img{
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    border:4px solid #d6c3a3;
+    object-fit:cover;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.profile h2{
+    margin-top:15px;
+    font-size:20px;
+    color:#6b4f3f;
+    letter-spacing:1px;
+}
+
+/* MENU */
+.menu{
+    margin-top:40px;
+}
+
+.menu a{
+    display:block;
+    padding:12px 15px;
+    color:#6b4f3f;
+    text-decoration:none;
+    margin-bottom:12px;
+    border-radius:12px;
+    transition:0.3s;
+    font-weight:500;
+}
+
+.menu a:hover{
+    background:#e6d3b8;
+}
+
+/* ===== CONTENT ===== */
+.content{
+    margin-left:260px;
+    width:100%;
+}
+
+/* HERO */
+.hero{
+    min-height:100vh;
+    background:
+      url('fotobag.jpg') center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    padding:80px;
+}
+
+.hero h1{
+    font-size:48px;
+    color:#4a3f35;
+}
+
+.hero span{
+    color:#8b6f47;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:18px;
+    color:#5f5246;
+}
+
+/* SECTION */
+section{
+    padding:80px;
+    background:#f6f1e7;
+}
+
+section h2{
+    font-size:32px;
+    margin-bottom:25px;
+    color:#8b6f47;
+}
+
+/* CARD */
+.card{
+    background:#fffaf2;
+    border:1px solid #e0d2bd;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.08);
+}
+
+/* ABOUT */
+.about p{
+    max-width:700px;
+    color:#5f5246;
+}
+
+/* SKILLS */
+.skills-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:20px;
+}
+
+.skill{
+    padding:18px;
+    text-align:center;
+    border-radius:15px;
+    background: linear-gradient(135deg,#e6d3b8,#f3e8d7);
+    color:#6b4f3f;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.skill:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* CONTACT */
+.contact p{
+    margin:10px 0;
+    color:#5f5246;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .sidebar{
+        position:relative;
+        width:100%;
+        min-height:auto;
+    }
+    .content{
+        margin-left:0;
+    }
+    .hero{
+        padding:50px 30px;
+    }
+    section{
+        padding:50px 30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <div class="profile">
+        <img src="fotonazli.jpg" alt="Foto Profil">
+        <h2>Nazli</h2>
+    </div>
+
+    <div class="menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+    <!-- HOME -->
+    <div id="home" class="hero">
+        <div>
+            <h1>Muhammad <span>Nazli Hasan</span></h1>
+            <p>Mahasiswa Ilmu Perpustakaan & Informasi Islam<br>
+               Angkatan 2022</p>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="card about">
+            <p>
+                Saya merupakan mahasiswa Ilmu Perpustakaan dan Informasi Islam
+                yang memiliki minat pada literasi digital, pengelolaan informasi,
+                serta desain web dengan nuansa klasik dan estetika yang tenang.
+            </p>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-box">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">Canva</div>
+            <div class="skill">Literasi Digital</div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="card contact">
+            <p>Email : nazlihasan929@gmail.com</p>
+            <p>Instagram : @_nazlihsn</p>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
